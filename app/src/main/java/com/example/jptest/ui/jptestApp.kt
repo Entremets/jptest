@@ -20,6 +20,7 @@ import androidx.compose.foundation.layout.Row
 import androidx.compose.material3.DrawerState
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ModalNavigationDrawer
+import androidx.compose.material3.Text
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
@@ -28,12 +29,13 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.example.jptest.data.AppContainer
 import kotlinx.coroutines.launch
 import com.example.jptest.ui.theme.JptestTheme
 import com.example.jptest.ui.components.AppNavRail
 
 @Composable
-fun JetnewsApp(appContainer: AppContainer, widthSizeClass: WindowWidthSizeClass) {
+fun JptestApp(appContainer: AppContainer, widthSizeClass: WindowWidthSizeClass) {
     JptestTheme {
         val navController = rememberNavController()
         val navigationActions = remember(navController) {
@@ -63,21 +65,21 @@ fun JetnewsApp(appContainer: AppContainer, widthSizeClass: WindowWidthSizeClass)
             // Only enable opening the drawer via gestures if the screen is not expanded
             gesturesEnabled = !isExpandedScreen,
         ) {
-            Row {
-                if (isExpandedScreen) {
-                    AppNavRail(
-                        currentRoute = currentRoute,
-                        navigateToHome = navigationActions.navigateToHome,
-                        navigateToInterests = navigationActions.navigateToInterests,
-                    )
-                }
-                JetnewsNavGraph(
-                    appContainer = appContainer,
-                    isExpandedScreen = isExpandedScreen,
-                    navController = navController,
-                    openDrawer = { coroutineScope.launch { sizeAwareDrawerState.open() } },
-                )
-            }
+//            Row {
+//                if (isExpandedScreen) {
+//                    AppNavRail(
+//                        currentRoute = currentRoute,
+//                        navigateToHome = navigationActions.navigateToHome,
+//                        navigateToInterests = navigationActions.navigateToInterests,
+//                    )
+//                }
+//                JetnewsNavGraph(
+//                    appContainer = appContainer,
+//                    isExpandedScreen = isExpandedScreen,
+//                    navController = navController,
+//                    openDrawer = { coroutineScope.launch { sizeAwareDrawerState.open() } },
+//                )
+//            }
         }
     }
 }

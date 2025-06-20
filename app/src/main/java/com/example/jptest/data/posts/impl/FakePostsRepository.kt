@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.example.jetnews.data.posts.impl
+package com.example.jptest.data.posts.impl
 
-import com.example.jetnews.data.Result
-import com.example.jetnews.data.posts.PostsRepository
-import com.example.jetnews.model.Post
-import com.example.jetnews.model.PostsFeed
-import com.example.jetnews.utils.addOrRemove
+import com.example.jptest.data.Result
+import com.example.jptest.data.posts.PostsRepository
+import com.example.jptest.model.Post
+import com.example.jptest.model.PostsFeed
+import com.example.jptest.utils.addOrRemove
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.Flow

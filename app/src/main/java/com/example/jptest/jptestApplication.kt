@@ -1,12 +1,12 @@
 package com.example.jptest
 
 import android.app.Application
-import com.example.jetnews.data.AppContainer
-import com.example.jetnews.data.AppContainerImpl
+import com.example.jptest.data.AppContainer
+import com.example.jptest.data.AppContainerImpl
 
 class jptestApplication : Application() {
     companion object {
-        const val JETNEWS_APP_URI = "https://developer.android.com/jetnews"
+        const val JPTEST_APP_URI = "https://developer.android.com/jetnews"
     }
 
     // AppContainer instance used by the rest of classes to obtain dependencies

@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.example.jetnews.data.interests.impl
+package com.example.jptest.data.interests.impl
 
-import com.example.jetnews.data.Result
-import com.example.jetnews.data.interests.InterestSection
-import com.example.jetnews.data.interests.InterestsRepository
-import com.example.jetnews.data.interests.TopicSelection
-import com.example.jetnews.utils.addOrRemove
+import com.example.jptest.data.Result
+import com.example.jptest.data.interests.InterestSection
+import com.example.jptest.data.interests.InterestsRepository
+import com.example.jptest.data.interests.TopicSelection
+import com.example.jptest.utils.addOrRemove
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow

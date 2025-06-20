@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.example.jetnews.data.posts
+package com.example.jptest.data.posts
 
-import com.example.jetnews.data.Result
-import com.example.jetnews.model.Post
-import com.example.jetnews.model.PostsFeed
+import com.example.jptest.data.Result
+import com.example.jptest.model.Post
+import com.example.jptest.model.PostsFeed
 import kotlinx.coroutines.flow.Flow
 
 /**
@@ -27,12 +27,12 @@ import kotlinx.coroutines.flow.Flow
 interface PostsRepository {
 
     /**
-     * Get a specific JetNews post.
+     * Get a specific jptest post.
      */
     suspend fun getPost(postId: String?): Result<Post>
 
     /**
-     * Get JetNews posts.
+     * Get jptest posts.
      */
     suspend fun getPostsFeed(): Result<PostsFeed>
 

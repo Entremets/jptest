@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.example.jetnews.data.interests
+package com.example.jptest.data.interests
 
-import com.example.jetnews.data.Result
+import com.example.jptest.data.Result
 import kotlinx.coroutines.flow.Flow
 
 data class InterestSection(val title: String, val interests: List<String>)

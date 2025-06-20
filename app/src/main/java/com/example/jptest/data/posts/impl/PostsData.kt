@@ -16,18 +16,18 @@
 
 @file:Suppress("ktlint:standard:max-line-length") // String constants read better
 
-package com.example.jetnews.data.posts.impl
+package com.example.jptest.data.posts.impl
 
-import com.example.jetnews.R
-import com.example.jetnews.model.Markup
-import com.example.jetnews.model.MarkupType
-import com.example.jetnews.model.Metadata
-import com.example.jetnews.model.Paragraph
-import com.example.jetnews.model.ParagraphType
-import com.example.jetnews.model.Post
-import com.example.jetnews.model.PostAuthor
-import com.example.jetnews.model.PostsFeed
-import com.example.jetnews.model.Publication
+import com.example.jptest.R
+import com.example.jptest.model.Markup
+import com.example.jptest.model.MarkupType
+import com.example.jptest.model.Metadata
+import com.example.jptest.model.Paragraph
+import com.example.jptest.model.ParagraphType
+import com.example.jptest.model.Post
+import com.example.jptest.model.PostAuthor
+import com.example.jptest.model.PostsFeed
+import com.example.jptest.model.Publication
 
 /**
  * Define hardcoded posts to avoid handling any non-ui operations.

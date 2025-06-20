@@ -17,10 +17,10 @@
 package com.example.jptest.data
 
 import android.content.Context
-import com.example.jetnews.data.interests.InterestsRepository
-import com.example.jetnews.data.interests.impl.FakeInterestsRepository
-import com.example.jetnews.data.posts.PostsRepository
-import com.example.jetnews.data.posts.impl.FakePostsRepository
+import com.example.jptest.data.interests.InterestsRepository
+import com.example.jptest.data.interests.impl.FakeInterestsRepository
+import com.example.jptest.data.posts.PostsRepository
+import com.example.jptest.data.posts.impl.FakePostsRepository
 
 /**
  * Dependency Injection container at the application level.
