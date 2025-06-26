@@ -1,5 +1,6 @@
 package com.example.compose.snippets.components
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
@@ -17,7 +18,9 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Tab
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.State
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.livedata.observeAsState
 import androidx.compose.runtime.mutableIntStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
@@ -30,14 +33,21 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.jptest.ui.song.songViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 
 @Composable
 fun SongsScreen(modifier: Modifier = Modifier) {
+    val viewModel:songViewModel = viewModel()
+    val countState: State<Int?> = viewModel.count.observeAsState()
+    val currentCount = countState.value ?: 0 // 默认值
+
+
     Box(
         modifier = Modifier.fillMaxSize(),
         contentAlignment = Alignment.Center
     ) {
-        Text("Songs Screen")
+        Text(currentCount.toString(),modifier.clickable { viewModel.increment() })
     }
 }
 

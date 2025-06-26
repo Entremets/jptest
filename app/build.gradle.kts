@@ -51,6 +51,7 @@ dependencies {
     implementation(libs.androidx.material3.window.size.class1.android)
     implementation("androidx.navigation:navigation-compose:2.7.7")
     implementation(libs.androidx.navigation.compose.android)
+    implementation(libs.androidx.runtime.livedata)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

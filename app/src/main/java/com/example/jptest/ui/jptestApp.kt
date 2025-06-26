@@ -18,11 +18,10 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.rememberNavController
 import com.example.compose.snippets.components.AppNavHost
 import com.example.compose.snippets.components.Destination
-import com.example.jptest.data.AppContainer
 import com.example.jptest.ui.theme.JptestTheme
 
 @Composable
-fun JptestApp(appContainer: AppContainer, widthSizeClass: WindowWidthSizeClass) {
+fun JptestApp() {
     JptestTheme {
         val navController = rememberNavController()
         val startDestination = Destination.SONGS
